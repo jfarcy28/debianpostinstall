@@ -30,5 +30,5 @@ apt -q -y install printer-driver-all cups-pdf cups-client
 
 echo "Installation de l'imprimante HP Laserjet CP3525dn"
 
-lpadmin -p 'HPLaserjetCP3525dn' -v 'http://192.168.1.252:631/printers/IMPRIMANTE_PDF' -P '/usr/share/ppd/cups-pdf/CUPS-PDF.ppd'
+lpadmin -p 'HPLaserjetCP3525dn' -E -v 'http://192.168.1.252:631/printers/IMPRIMANTE_PDF' -P '/usr/share/ppd/cups-pdf/CUPS-PDF.ppd'
 lpadmin -d 'HPLaserjetCP3525dn'
